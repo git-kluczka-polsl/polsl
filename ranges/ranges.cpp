@@ -26,7 +26,7 @@ int main()
 	auto kwadraty = VEC2
 		| std::views::transform([](auto const i) {return i * i / 2; });
 	auto kola = VEC2
-		| std::views::transform([](auto const i) {return i * i * 3,14; });
+		| std::views::transform([](auto const i) {return (i * i * 3.14); });
 	auto trojkaty = VEC2
 		| std::views::transform([](auto const i) {return i * i * sqrt(3) / 4; });
 	std::vector<int> combo;
